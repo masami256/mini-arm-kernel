@@ -21,6 +21,7 @@ build:
 
 clean:
 	-rm -f $(objdir)/*.o 
+	-rm -f $(kernel)
 	find . -name '*~' -exec rm {} \; 
 
 test:
