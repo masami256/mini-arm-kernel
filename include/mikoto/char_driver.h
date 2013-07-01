@@ -6,7 +6,7 @@ struct char_driver_operations {
 	int (*open)(void);
 	int (*close)(void);
 	int (*read)(char *buf, size_t size);
-	int (*write)(const char *buf);
+	int (*write)(const char *buf, size_t size);
 };
 
 struct char_driver {

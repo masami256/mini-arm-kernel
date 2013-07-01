@@ -18,6 +18,7 @@ build:
 	cd boot && $(MAKE)
 	cd init && $(MAKE)
 	cd drivers && $(MAKE)
+	cd klibs && $(MAKE)
 
 clean:
 	-rm -f $(objdir)/*.o 
