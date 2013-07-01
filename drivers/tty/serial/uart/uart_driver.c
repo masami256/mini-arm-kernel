@@ -11,10 +11,10 @@ static struct char_driver uart_driver = {
 	.name = "UART",
 };
 
-void uart_init(void)
+static void 
+uart_init(void)
 {
-	struct char_driver *uart = get_uart_driver_instance();
-	uart->ops = &uart_ops;
+	uart_driver.ops = &uart_ops;
 }
 
 struct char_driver *
