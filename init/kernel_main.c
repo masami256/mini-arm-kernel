@@ -3,7 +3,7 @@
 void
 kernel_main(void)
 {
-	puts("hello, world!");
+	uart_puts("hello, world!");
 	while (1);
 }
 
