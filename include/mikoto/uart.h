@@ -10,11 +10,11 @@
 
 #define uart_puts(str) \
 	do { \
-		struct char_driver *uart = get_uart_driver_instance(); \
+		struct char_driver *uart = uart_get_driver_instance(); \
 		uart->ops->write(str, strlen(str)); \
-	} while(0);
+	} while(0)
 
-struct char_driver *get_uart_driver_instance(void);
+struct char_driver *uart_get_driver_instance(void);
 
 #endif // __MIKOTO_UART_H
 

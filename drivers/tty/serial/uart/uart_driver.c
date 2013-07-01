@@ -18,7 +18,7 @@ uart_init(void)
 }
 
 struct char_driver *
-get_uart_driver_instance(void)
+uart_get_driver_instance(void)
 {
 	if (!uart_driver.ops)
 		uart_init();
