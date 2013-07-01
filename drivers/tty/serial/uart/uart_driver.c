@@ -1,6 +1,10 @@
 #include <mikoto/char_driver.h>
 #include <mikoto/uart.h>
 
+#define UART0 ((volatile unsigned int *) 0x101f1000)
+#define UARTFR 0x06
+#define UARTFR_TXFF 0x20
+
 static int uart_write(const char *buf, size_t size);
 
 static struct char_driver_operations uart_ops = {
