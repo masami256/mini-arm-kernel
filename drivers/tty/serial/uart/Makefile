@@ -1,6 +1,8 @@
 include $(topdir)/Makefile.inc
 
-objs = head.o
+CFLAGS += -I.
+
+objs = uart_driver.o
 
 all: $(objs)
 

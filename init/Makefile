@@ -1,6 +1,6 @@
-include ../Makefile.inc
+include $(topdir)/Makefile.inc
 
-CFLAGS += -I../include -I.
+CFLAGS += -I.
 
 objs = kernel_main.o
 
