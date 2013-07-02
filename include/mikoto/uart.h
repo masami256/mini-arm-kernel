@@ -5,12 +5,9 @@
 #include <mikoto/string.h>
 
 #define uart_puts(str) \
-	do { \
-		struct char_driver *uart = uart_get_driver_instance(); \
-		uart->ops->write(str, strlen(str)); \
-	} while(0)
+		uart_get_driver_instance()->ops->write(str, strlen(str)); 
 
-struct char_driver *uart_get_driver_instance(void);
+const struct char_driver *uart_get_driver_instance(void);
 
 #endif // __MIKOTO_UART_H
 
