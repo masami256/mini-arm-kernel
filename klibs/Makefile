@@ -2,7 +2,9 @@ include $(topdir)/Makefile.inc
 
 CFLAGS += -I.
 
-objs = string.o
+objs = string.o \
+	   stdlib.o \
+	   printf.o
 
 all: $(objs)
 
