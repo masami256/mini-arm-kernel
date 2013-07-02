@@ -26,7 +26,7 @@ clean:
 	find . -name '*~' -exec rm {} \; 
 
 test:
-	qemu-system-arm -M versatilepb -nographic -kernel $(kernel) -m 128
+	QEMU_AUDIO_DRV=none qemu-system-arm -M versatilepb -nographic -kernel $(kernel) -m 128
 
 .PHONY: clean all
 
