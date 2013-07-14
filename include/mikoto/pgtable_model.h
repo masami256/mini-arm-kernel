@@ -6,7 +6,6 @@ typedef struct translation_table {
     unsigned long index[sizeof(unsigned long) * NUM_TRANSLATION_TABLE_ENTRIES];
 } translation_tbl_t;
 
-typedef 
 #define TRANSLATION_TABLE_ADDRESS_ALIGN 0x4000
 
 #ifdef USE_SMALL_PAGE
