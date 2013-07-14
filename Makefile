@@ -17,6 +17,7 @@ setup:
 build:
 	cd boot && $(MAKE)
 	cd init && $(MAKE)
+	cd mm && $(MAKE)
 	cd drivers && $(MAKE)
 	cd klibs && $(MAKE)
 

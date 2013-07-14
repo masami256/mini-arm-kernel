@@ -23,7 +23,7 @@ typedef struct first_level_descriptor {
 	unsigned domain_control:4;  	// Domain control bits. bit5:8
 	unsigned unused_bits_3:3;		// should be 0. bit9:11
 	unsigned address:20;			// address. bit12:31
-} first_lever_descriptor_t __attribute__ ((packed));
+} first_level_descriptor_t;
 
 // Second level descriptor
 typedef struct second_level_descriptor {
@@ -34,7 +34,7 @@ typedef struct second_level_descriptor {
 	unsigned domain_cotrol_3:2;		// Domain control bit. bit8:9
 	unsigned domain_cotrol_4:2;		// Domain control bit. bit10:11
 	unsigned address:20;			// address. bit12:31
-} second_level_descriptor_t __attribute__ ((packed));
+} second_level_descriptor_t;
 
 #define NUM_SMALL_PAGE_FINE_TABLE_ENTRIES 1024
 typedef struct first_page_table {
