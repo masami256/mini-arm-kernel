@@ -6,6 +6,7 @@
 #include <mikoto/pgtable_model.h>
 
 int init_pgtable(void);
+unsigned long get_translation_table_address(void);
 
 #endif // __MIKOTO_PGTABLE_H
 

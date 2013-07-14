@@ -86,3 +86,9 @@ init_pgtable(void)
     return 0;
 }
 
+unsigned long
+get_translation_table_address(void)
+{
+	return (unsigned long) &translation_tbl;
+}
+
