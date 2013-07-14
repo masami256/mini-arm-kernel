@@ -2,7 +2,8 @@ include $(topdir)/Makefile.inc
 
 CFLAGS += -I.
 
-objs = init_pgtable.o
+objs = init_pgtable.o \
+	   paging.o
 
 all: $(objs)
 
