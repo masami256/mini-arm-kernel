@@ -83,6 +83,10 @@ setup_second_pgtable_for_init(void)
 int
 init_pgtable(void)
 {
+	setup_translation_table();
+	setup_first_pgtable_for_init();
+	setup_second_pgtable_for_init();
+
     return 0;
 }
 
