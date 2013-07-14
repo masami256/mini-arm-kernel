@@ -13,6 +13,7 @@ typedef struct translation_table {
 // Small page uses 4k page.
 #define PAGE_SIZE 4096
 #define PAGE_SIZE_MASK 0xfffff000
+#define PAGE_SHIFT 12
 
 // First level desciriptor
 typedef struct first_level_descriptor {

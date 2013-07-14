@@ -16,7 +16,7 @@ enable_paging(void)
 static void 
 set_translation_table_address(unsigned long addr)
 {
-	unsigned long addr = get_translation_table_address() & PAGE_SIZE_MASK;
+	unsigned long addr = get_translation_table_address() << PAGE_SHIFT;
 	write_control_register("c2", addr);
 }
 
