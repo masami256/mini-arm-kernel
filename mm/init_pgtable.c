@@ -24,7 +24,7 @@ static void
 setup_translation_table(void)
 {
 	uart_puts("[-]Start setup_translation_table\n");
-	translation_tbl.index[0] = (unsigned long) &init_first_pgtable;
+	translation_tbl.index[0] = (unsigned long) &init_first_pgtable << 13;
 	uart_puts("[-]End setup_translation_table\n");
 }
 
